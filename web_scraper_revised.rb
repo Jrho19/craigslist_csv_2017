@@ -8,7 +8,7 @@ require 'csv'
 bed = 3
 bath = 2
 
-#For the sake of this exercise this city variable is hard coded but could be 'gets.chomp' and puts a string requesting input from the user to interpolate the city into the craigslist url.
+#For the sake of this exercise this city variable is hard coded but could be 'gets.downcase.delete(' ').chomp.' and puts a string requesting input from the user to interpolate the city into the craigslist url.
 city = "miami"
 
 site = "https://#{city}.craigslist.org/search/swp?min_bedrooms=#{bed}&max_bedrooms=#{bed}&min_bathrooms=#{bath}&max_bathrooms=#{bath}&availabilityMode=0"
