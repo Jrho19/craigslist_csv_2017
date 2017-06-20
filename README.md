@@ -1,6 +1,6 @@
 # README
 
-- Challenge -
+### CSV Challenge 
 
 - Write a web scraper that will generate a csv of all the 3 bedroom, 2 bathroom homes for rent in a given city on Craigslist.
 - The CSV should have the following columns: title, address (if available), monthly rent (if available), URL to original listing.

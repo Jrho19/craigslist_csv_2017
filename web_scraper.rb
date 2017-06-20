@@ -22,25 +22,25 @@ page = Nokogiri::HTML(response)
 ######################################################################
 #Display Section - This section of the script was built to find the desired HTML data to scrape by displaying it in the terminal
 #display title output on the screen
-#
-# page.css('a.result-title').each do |line|
-#   puts line.text
-# end
-#
-# # show address output on the screen
-# page.css('span.result-hood').each do |line|
-#   puts line.text
-# end
-#
-# #show rent price on the screen
-# page.css('span.result-price').each do |line|
-#   puts line.text
-# end
-#
-# #URL to the original listing
-# page.css('p.result-info').css('a').each do |line|
-#   puts line['href']
-# end
+
+page.css('a.result-title').each do |line|
+  puts line.text
+end
+
+# show address output on the screen
+page.css('span.result-hood').each do |line|
+  puts line.text
+end
+
+#show rent price on the screen
+page.css('span.result-price').each do |line|
+  puts line.text
+end
+
+#URL to the original listing
+page.css('p.result-info').css('a').each do |line|
+  puts line['href']
+end
 
 ######################################################################
 #Build Section - This portion of the script was built to create the arrays that would store each column of data for the CSV file
@@ -77,8 +77,3 @@ CSV.open('appointments.csv', 'w') do |csv|
     csv << [title[i], url[i], address[i], rent[i]]
   end
 end
-
-p title
-p address
-p rent
-p url
