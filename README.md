@@ -1,15 +1,15 @@
 # README
 
-### CSV Challenge 
+### CSV Challenge
 
 - Write a web scraper that will generate a csv of all the 3 bedroom, 2 bathroom homes for rent in a given city on Craigslist.
 - The CSV should have the following columns: title, address (if available), monthly rent (if available), URL to original listing.
 
-The App required me to use Nokogiri, HTTParty, Open-URI.
+The App required me to use Nokogiri, Open-URI, CSV.
 
 ## Display
 
-After adding my dependencies I decided to start by displaying what my code was doing first in the terminal before building the actual data structures with the parsed data. I called it "The Display Section"
+After adding my dependencies I decided to start by displaying what my code was doing first in the terminal before building the actual data structures with the parsed data. I refer to it as the "The Display Section"
 
 ## Build
 
